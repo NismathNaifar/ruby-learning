@@ -1,0 +1,28 @@
+
+
+<%= form_with scope: :post, url: posts_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title, placeholder: 'enter text here' %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :part_number %><br>
+    <%= form.text_field :body, placeholder: 'enter content' %>
+  </p>
+
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+
+
+
+
+
